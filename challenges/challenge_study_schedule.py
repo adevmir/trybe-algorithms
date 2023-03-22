@@ -5,6 +5,6 @@ def study_schedule(permanence_period, target_time):
             or type(student[0]) != int\
                 or type(student[1]) != int:
             return None
-        if target_time in range(student[0], student[1] + 1):
+        if student[0] <= target_time <= student[1]:
             result += 1
     return result
