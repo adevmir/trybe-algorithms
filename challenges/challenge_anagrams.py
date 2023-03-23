@@ -1,6 +1,6 @@
 def is_anagram(first_string, second_string):
-    first_string = list(first_string)
-    second_string = list(second_string)
+    first_string = list(first_string.casefold())
+    second_string = list(second_string.casefold())
     for i in range(0, len(first_string)):
         i_short = i
         for j in range(i + 1, len(first_string)):
